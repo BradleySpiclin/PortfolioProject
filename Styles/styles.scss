@@ -505,9 +505,8 @@ section {
 
 //Contact section
 .contact-content-con {
-    display: flex;
     padding-top: 3.5rem;
-    .left-contact {
+    .main-contact {
         flex: 2;
         h4 {
             margin-top: 1rem;
@@ -521,7 +520,7 @@ section {
 
         .contact-info {
             .contact-item {
-                display: flex;
+                // display: flex;
                 align-items: center;
                 justify-content: space-between;
                 p {
@@ -569,7 +568,8 @@ section {
         }
     }
 
-    .right-contact {
+    .form-contact {
+        align-items: center;
         flex: 3;
         margin-left: 3rem;
         .input-control {
