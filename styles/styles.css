@@ -88,13 +88,12 @@ section {
 }
 
 .card {
-  padding: 20px;
-  margin: 10px;
-  max-width: 220px;
-  border: 1px solid var(--color-grey-5);
-  border-radius: 5px;
-  transition: all .4s ease-in-out;
-  box-shadow: 1px 2px 15px rgba(0,0,0,.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* set a fixed width and height for the card */
+  width: 150px;
+  height: 150px;
 }
 
 .card:hover{
@@ -104,10 +103,9 @@ section {
     box-shadow: 1px 4px 15px rgba(0,0,0,.32);
 }
 
-.card img {
-  max-width: 100%;
-  max-height: 100%;
-  display: block;
+.csharp {
+  /* set the image as a background image of the new div element */
+  background-image: url("https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg");
 }
 
 .languages .card {
@@ -116,12 +114,6 @@ section {
   transition: transform 0.3s ease-in;
 }
 
-.languages .card h4 {
-  text-transform: uppercase;
-  font-size: 1.2rem;
-  color: var(--color-grey-1);
-  letter-spacing: 2px;
-}
 
 .active {
   display: block;
