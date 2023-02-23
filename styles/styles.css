@@ -66,6 +66,31 @@ section {
   padding: 3rem 18rem;
 }
 
+.social-icons {
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  padding: 1rem;
+  /* align-self: flex-start; */
+  margin-top: -10px;
+}
+
+.social-icons a {
+  display: inline-block;
+  color: var(--color-grey-2);
+  transition: color 0.2s ease-in-out;
+  padding-left: 5px;
+}
+
+.social-icons a:hover {
+  color: var(--color-secondary);
+}
+
+.social-icons i {
+  font-size: 40px;
+  line-height: 1;
+}
+
 .container {
   display: none;
   transform: translateY(-100%) scale(0);
@@ -73,27 +98,35 @@ section {
   background-color: var(--color-primary);
 }
 
-
-.cont {
-  max-width: 1100px;
-  margin: 0 auto;
-  overflow: auto;
-  padding: 0 40px;
-  display: block;
-}
-
-.flex {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.card {
+.languages{
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.lang-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  margin: 0 auto;
+  overflow:visible;
+}
+
+.card {
   /* set a fixed width and height for the card */
-  width: 150px;
-  height: 150px;
+  width: 120px;
+  height: 120px;
+  position: relative;
+}
+.card-text {
+  position: absolute;
+  top: -30px; /* adjust the value as needed */
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  color: var(--color-grey-1);
+  letter-spacing: 0.5px;
 }
 
 .card:hover{
@@ -104,8 +137,40 @@ section {
 }
 
 .csharp {
-  /* set the image as a background image of the new div element */
   background-image: url("https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg");
+}
+.mysql {
+  background-image: url("https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg");
+}
+.html {
+  background-image: url("https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg");
+}
+.css {
+  background-image: url("https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg");
+}
+.javascript {
+  background-image: url("https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg");
+}
+.git {
+  background-image: url("https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg");
+}
+.github {
+  background-image: url("https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg");
+}
+.python{
+  background-image: url("https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg");
+}
+.visualstudio {
+  background-image: url("https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-plain.svg" );
+}
+.vscode {
+  background-image: url("https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg");
+}
+.cplusplus {
+  background-image: url("https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg");
+}
+.bash {
+  background-image: url("https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg");
 }
 
 .languages .card {
@@ -113,7 +178,6 @@ section {
   margin: 18px 10px 40px;
   transition: transform 0.3s ease-in;
 }
-
 
 .active {
   display: block;
@@ -232,6 +296,7 @@ section {
 .header-content .left-header .image img:hover {
   filter: grayscale(0);
 }
+
 .header-content .right-header {
   display: flex;
   flex-direction: column;
@@ -319,7 +384,6 @@ section {
   text-decoration: underline;
 }
 
-
 /*Timeline*/
 .timeline {
   display: grid;
@@ -380,7 +444,7 @@ section {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 2rem;
-  margin-top: 3rem;
+  margin-top: 6rem;
 }
 .portfolios .portfolio-item {
   position: relative;
@@ -449,20 +513,19 @@ section {
 }
 
 .contact-content-con {
-  display: flex;
+  display: block;
   padding-top: 3.5rem;
 }
 .contact-content-con .left-contact {
   flex: 2;
 }
-.contact-content-con .left-contact h4 {
-  margin-top: 1rem;
-  font-size: 2rem;
-  text-transform: uppercase;
-}
+
 .contact-content-con .left-contact p {
   margin: 1rem 0;
   line-height: 2rem;
+}
+.contact-container {
+  justify-items: center;
 }
 .contact-content-con .left-contact .contact-info .contact-item {
   display: flex;
@@ -493,8 +556,8 @@ section {
   background-color: var(--color-grey-5);
   cursor: pointer;
   justify-content: center;
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   margin: 0 0.4rem;
   transition: all 0.4s ease-in-out;
@@ -511,10 +574,10 @@ section {
   justify-content: center;
   font-size: 1.3rem;
 }
-.contact-content-con .right-contact {
+/* .contact-content-con .right-contact {
   flex: 3;
   margin-left: 3rem;
-}
+} */
 .contact-content-con .right-contact .input-control {
   margin: 1.5rem 0;
 }
@@ -541,13 +604,16 @@ section {
   display: flex;
   justify-content: flex-start;
 }
-
 /*Independed components*/
 .btn-con {
+  /* margin-left: -20px; */
   display: flex;
-  align-self: flex-start;
+  align-self: left;
+  margin-left: -20px;
 }
-
+.left-about .btn-con{
+  margin-left: -10px;
+}
 .stat-title {
   text-transform: uppercase;
   font-size: 1.4rem;
@@ -632,13 +698,31 @@ section {
   font-size: 6.3rem;
 }
 
-.about-container .left-about p {
-  padding-left: 0;
-}
 
 @media screen and (max-width: 600px) {
   header {
     padding: 0 !important;
+  }
+  .portfolios {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .about-container .left-about .btn-con .main-btn{
+    align-self: center;
+  }
+  .left-contact .btn-con .main-btn{
+    align-self: center;
+  }
+  .main-btn{
+    justify-content: center;
+    justify-self: center;
+  }
+  .btn-con{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+  }
+  .social-icons{
+    margin-top: 10px;
   }
   .theme-btn {
     width: 50px;
@@ -689,6 +773,8 @@ section {
   .about-container .left-about {
     padding-right: 0;
   }
+
+
   .about-container .left-about p {
     padding-left: 0;
   }
@@ -702,7 +788,7 @@ section {
   .portfolios {
     grid-template-columns: repeat(1, 1fr);
     padding-bottom: 6rem;
-    margin-top: 1rem;
+    margin-top: 5rem;
   }
   .contact-content-con {
     flex-direction: column;
@@ -778,11 +864,7 @@ section {
     padding-right: 9rem;
   }
 }
-@media screen and (max-width: 660px) {
-  .portfolios {
-    grid-template-columns: repeat(1, 1fr);
-  }
-}
+
 @media screen and (max-width: 1070px) {
   .about-container {
     grid-template-columns: repeat(1, 1fr);
