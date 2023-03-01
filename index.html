@@ -13,7 +13,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
-<body class="main-content">
+<body>
+    <div class="main-content">
     <header class="container header active" id="home">
         <div class="header-content">
             <div class="left-header">
@@ -77,26 +78,13 @@
                 <div class="right-about">
                     <div class="about-item">
                         <div class="abt-text">
-                            <p class="large-text">20+</p>
-                            <p class="small-text">Years of <br /> customer <br> service <br> experience</p>
-                        </div>
-                    </div>
-                    <div class="about-item">
-                        <div class="abt-text">
-                            <p class="large-text">400+</p>
-                            <p class="small-text">Algorithms <br /> solved On <br /> <a href="https://www.codewars.com/users/Larsa" class="codewars">codewars</p></a>
-                        </div>
-                    </div>
-                    <div class="about-item">
-                        <div class="abt-text">
-                            <p class="large-text">3</p>
-                            <p class="small-text">Projects <br /> Completed</p>
-                        </div>
-                    </div>
-                    <div class="about-item">
-                        <div class="abt-text">
-                            <p class="large-text">7</p>
-                            <p class="small-text">Udemy <br /> Courses <br /> Completed</p>
+                            <p class="large-text">Codewars<br></p>
+                            <p class="small-text">I enjoy solving coding challenges on codewars website<br><br></p>
+                            <p class="small-text">Over 450 solved using C#<br><br></p>
+                            <p class="small-text">Visit my profile<br><br></p>
+                            <p><a href="https://www.codewars.com/users/Larsa">
+                                <img class="cw-icon" src="https://www.codewars.com/users/Larsa/badges/large" alt="Codewars Profile">
+                            </a><br><br></p>
                         </div>
                     </div>
                 </div>
@@ -142,7 +130,6 @@
                 </div>
             </div>
         </div>
-
         <h4 class="stat-title">My Timeline</h4>
             <div class="timeline">
                 <div class="timeline-item">
@@ -152,7 +139,7 @@
                     <p class="tl-duration">2022 - present</p>
                     <h5>Student<span> - Deakin University</span></h5>
                     <p>
-                        Bachelor of Information Technology majoring in Application Development.
+                        Bachelor of Information Technology major in Application Development.
                     </p>
                 </div>
                 <div class="timeline-item">
@@ -167,7 +154,6 @@
                 </div>
             </div>
         </section>
-
         <section class="container" id="portfolio">
             <div class="main-title">
                 <h2>My <span>Portfolio</span></h2>
@@ -190,23 +176,16 @@
                         </div>
                     </div>
                 </div>
-                <p>About this project......</p>
-                </div>
-                <div class="portfolio-text">
-                <div class="portfolio-item">
-                    <div class="image">
-                        <img src="images/LurkbysLair.png" alt="">
-                    </div>
-                    <div class="hover-items">
-                        <h3>Video Demo</h3>
-                        <div class="icons">
-                            <a href="https://www.youtube.com/watch?v=NSO5xyWd8TQ&ab_channel=BradleySpiclin" class="icon">
-                                <i class="fab fa-youtube"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <p>About this project...</p>
+                <p>This web application is designed to function as a personal library storage for users, 
+                    enabling them to easily store and retrieve book titles and authors, as well as track reading progress. 
+                    As an avid reader myself, I recognized the need for such an app, as I often struggled to recall recommended titles and authors. 
+                    <br><br>
+                    The development of this application was not without its challenges, including the need to familiarize myself with Vue3, 
+                    implementing Vue router functionality, and successfully managing API calls and data storage within a JavaScript object. 
+                    <br><br>
+                    To build this project, I leveraged a combination of HTML, CSS, and the Vue.js framework, which enabled me to create an 
+                    intuitive and user-friendly web application that addresses the common problem of book organization and tracking.
+                </p>
                 </div>
                 <div class="portfolio-text">
                     <div class="portfolio-item">
@@ -222,59 +201,49 @@
                         </div>
                     </div>
                     </div>
-                    <p>About this project...</p>
+                    <p>My first major game development project was an action-packed RPG, which required over 100 hours of dedicated design, 
+                        development, and testing to produce a fully functional main character, along with enemy AI, pickups, collectibles, 
+                        and interactive components.
+                        <br><br>
+                        While the project was undoubtedly challenging, it proved to be an invaluable opportunity for me to hone my programming 
+                        skills. In particular, I developed my ability to identify and debug complex code that was prone to logical errors. 
+                        To address these challenges, I applied my expertise in utilizing breakpoints within Visual Studio
+                        to isolate and correct these errors.
+                        <br><br>
+                        In terms of technology, I utilized C++ and Unreal Engine 4 to bring my vision to life, ultimately delivering an immersive 
+                        gaming experience that I remain proud of to this day.
+                    </p>
                 </div>
-    
-            </div>
-        </section>
-        <!-- <section class="container contact" id="contact">
-                    <div class="main-title">
-                        <h2>Contact <span>Me</span></h2>
-                    </div>
-                    <div class="contact-content-con">
-                        <div class="left-contact">
-                            <p>
-                                You can reach me through the provided social links or by completing this contact form.
-                                Please fill in all required information before submitting your query and I will respond in a timely manner.
-                            </p>
-                            <div class="btn-con">
-                                <div class="social-icons">
-                                    <a href="https://github.com/BradleySpiclin"><i class="fab fa-github"></i></a>
-                                    <a href="https://www.linkedin.com/in/bradley-spiclin/"><i class="fab fa-linkedin"></i></a>
-                                    <a href="https://www.facebook.com/bradley.spiclin"><i class="fab fa-facebook"></i></a>
-                                    <a href="https://www.youtube.com/channel/UCCG2uK1gLQALZoahP8JxHLw"><i class="fab fa-youtube-square"></i></a>
-                                </div>
-                                <a href="files/MyResume.pdf" class="main-btn" download>
-                                    <span class="btn-text">Download CV</span>
-                                    <span class="btn-icon"><i class="fas fa-download"></i></span>
+                <div class="portfolio-text">
+                    <div class="portfolio-item">
+                        <div class="image">
+                            <img src="images/LurkbysLair.png" alt="">
+                        </div>
+                        <div class="hover-items">
+                            <h3>Video Demo</h3>
+                            <div class="icons">
+                                <a href="https://www.youtube.com/watch?v=NSO5xyWd8TQ&ab_channel=BradleySpiclin" class="icon">
+                                    <i class="fab fa-youtube"></i>
                                 </a>
                             </div>
                         </div>
-                        <div class="right-contact">
-                            <div class="form-container">
-                            <form action="https://formspree.io/f/xzbwzkdq" method="POST" id="my-form" class="contact-form" aria-required="true">
-                                <div class="input-control i-c-2">
-                                    <input type="text" id="name" name="name" placeholder="Name.." required >
-                                    <input type="email" id="email" name="email" placeholder="Email.." required >
-                                </div>
-                                <div class="input-control">
-                                    <input type="text" name="subject" id="subject" placeholder="Subject.." required>
-                                </div>
-                                <div class="input-control">
-                                    <textarea type="text" name="message" id="message" cols="15" rows="8" placeholder="Message.." required ></textarea>
-                                </div>
-                                <div class="submit-btn">
-                                    <a href="#" class="main-btn" id="submit-form">                
-                                        <span class="btn-text">Submit</span>
-                                        <span class="btn-icon"><i class="fas fa-arrow-right"></i></span>
-                                    </a>
-                                </div>
-                            </form>
-                        </div>
                     </div>
-                </div>
-        </section> -->
-
+                    <p>I've always loved retro 2D sidescroller video games, hence the motivation for this project. 
+                        I aimed to create a nostalgic experience for the player by designing, 
+                        building, and testing a platform game with movement capabilities such as jumping and wall sliding.
+                        <br><br>
+                        This project had some difficulties along the way, namely learning to work with sprites to implement
+                        character and enemy animation. In the process, 
+                        I also gained exposure to building tilesets, which I used to create visually appealing backgrounds.
+                        My experience developing this project was incredibly rewarding, as I not only succeeded in creating 
+                        an engaging platform game, but also acquired a plethora of new skills along the way. 
+                        <br><br>
+                        The technology I employed for this project was Unreal Engine 5, 
+                        which proved to be a reliable and powerful platform for my creative vision.
+                    </p>
+                    </div>
+            </div>
+        </section>
         <section class="container contact" id="contact">
             <div class="contact-container">
                 <div class="main-title">
@@ -346,5 +315,6 @@
         <i class="fas fa-adjust"></i>
     </div>
     <script src="app.js"></script>
+</div>
 </body>
 </html>
