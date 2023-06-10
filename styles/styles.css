@@ -177,6 +177,9 @@ section {
 .bash {
   background-image: url("https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg");
 }
+.azure {
+  background-image: url("https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" );
+}
 
 .languages .card {
   text-align: center;
@@ -362,6 +365,7 @@ section {
   font-size: 1.2rem;
   color: var(--color-grey-1);
   letter-spacing: 2px;
+  padding-bottom: 40px;
 }
 .about-container .right-about .about-item .abt-text .small-text::before {
   content: "";
